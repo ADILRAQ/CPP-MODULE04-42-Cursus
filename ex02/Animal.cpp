@@ -6,7 +6,7 @@
 /*   By: araqioui <araqioui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 14:59:17 by araqioui          #+#    #+#             */
-/*   Updated: 2023/08/23 17:37:11 by araqioui         ###   ########.fr       */
+/*   Updated: 2023/08/24 10:21:09 by araqioui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,10 @@ Animal	&Animal::operator = (const Animal &source)
 	return (*this);
 }
 
-void	Animal::makeSound(void) const
-{
-	std::cout << "HUH...!!" << std::endl;
-}
+// void	Animal::makeSound(void) const
+// {
+// 	std::cout << "HUH...!!" << std::endl;
+// }
 
 // Getter
 

@@ -6,7 +6,7 @@
 /*   By: araqioui <araqioui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 14:42:54 by araqioui          #+#    #+#             */
-/*   Updated: 2023/08/23 17:36:57 by araqioui         ###   ########.fr       */
+/*   Updated: 2023/08/24 10:21:17 by araqioui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Animal {
 		Animal(const Animal &obj);
 		virtual ~Animal(void);
 		Animal			&operator = (const Animal &source);
-		virtual void	makeSound(void) const;
+		virtual void	makeSound(void) const = 0;
 		// Getter
 		std::string		getType(void) const;
 };

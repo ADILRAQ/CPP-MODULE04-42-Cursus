@@ -6,7 +6,7 @@
 /*   By: araqioui <araqioui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 14:41:41 by araqioui          #+#    #+#             */
-/*   Updated: 2023/08/24 10:13:45 by araqioui         ###   ########.fr       */
+/*   Updated: 2023/08/24 10:22:27 by araqioui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,5 @@ int main()
 		while (++i < NBANIMALS)
 			delete ptr[i];
 	}
-	while (1);
 	return 0;
 }
