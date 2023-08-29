@@ -1,47 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.cpp                                         :+:      :+:    :+:   */
+/*   AMateria.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: araqioui <araqioui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/22 14:59:17 by araqioui          #+#    #+#             */
-/*   Updated: 2023/08/29 10:17:00 by araqioui         ###   ########.fr       */
+/*   Created: 2023/08/26 14:17:28 by araqioui          #+#    #+#             */
+/*   Updated: 2023/08/29 08:50:49 by araqioui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "AMateria.hpp"
 
-Animal::Animal(void) : type("")
+AMateria::AMateria(void)
 {
-	std::cout << "Animal: Default constructor called!" << std::endl;
 }
 
-Animal::Animal(std::string Type) : type(Type)
+AMateria::AMateria(std::string const &type) : Type(type)
 {
-	std::cout << "Animal: Param constructor called!" << std::endl;
 }
 
-Animal::~Animal(void)
+AMateria::~AMateria(void)
 {
-	std::cout << "Animal: Destructor called!" << std::endl;
 }
 
-Animal::Animal(const Animal &obj)
+AMateria::AMateria(const AMateria &obj)
 {
 	*this = obj;
 }
 
-Animal	&Animal::operator = (const Animal &source)
+AMateria	&AMateria::operator = (const AMateria &source)
 {
 	if (this != &source)
-		type = source.type;
+		Type = source.Type;
 	return (*this);
 }
 
-// Getter
-
-std::string	Animal::getType(void) const
+std::string const	&AMateria::getType(void) const
 {
-	return (type);
+	return (Type);
+}
+
+void	AMateria::use(ICharacter &target)
+{
+	(void)target;
 }

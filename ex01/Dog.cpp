@@ -6,7 +6,7 @@
 /*   By: araqioui <araqioui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 15:05:23 by araqioui          #+#    #+#             */
-/*   Updated: 2023/08/23 17:44:19 by araqioui         ###   ########.fr       */
+/*   Updated: 2023/08/25 09:40:38 by araqioui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ Dog::Dog(void) : Animal("Dog")
 {
 	std::cout << "Dog: Default constructor called!" << std::endl;
 	brain = new Brain;
+	// TODO: Should I protect it with exit
 }
 
 Dog::~Dog(void)
@@ -27,6 +28,7 @@ Dog::~Dog(void)
 Dog::Dog(const Dog &obj)
 {
 	brain = new Brain;
+	// TODO: Should I protect it with exit
 	*this = obj;
 }
 
