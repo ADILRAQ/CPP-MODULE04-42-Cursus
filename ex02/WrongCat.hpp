@@ -6,12 +6,11 @@
 /*   By: araqioui <araqioui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 18:38:10 by araqioui          #+#    #+#             */
-/*   Updated: 2023/08/23 09:34:35 by araqioui         ###   ########.fr       */
+/*   Updated: 2023/09/09 15:56:17 by araqioui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef _WRONGCAT_HPP_
-#define _WRONGCAT_HPP_
+#pragma once
 
 #include "WrongAnimal.hpp"
 
@@ -23,5 +22,3 @@ class WrongCat : public WrongAnimal {
 		WrongCat	&operator = (const WrongCat &source);
 		void		makeSound(void) const;
 };
-
-#endif /* _WRONGCAT_HPP_ */

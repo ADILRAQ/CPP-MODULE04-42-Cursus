@@ -6,12 +6,11 @@
 /*   By: araqioui <araqioui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 14:44:33 by araqioui          #+#    #+#             */
-/*   Updated: 2023/08/23 17:47:16 by araqioui         ###   ########.fr       */
+/*   Updated: 2023/09/09 15:56:00 by araqioui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef _CAT_HPP_
-#define _CAT_HPP_
+#pragma once
 
 #include "Animal.hpp"
 #include "Brain.hpp"
@@ -30,5 +29,3 @@ class Cat : public Animal {
 		void		setIdeas(std::string idea);
 		std::string	getIdeas(int id) const;
 };
-
-#endif /* _CAT_HPP_ */

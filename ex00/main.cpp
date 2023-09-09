@@ -6,7 +6,7 @@
 /*   By: araqioui <araqioui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 14:41:41 by araqioui          #+#    #+#             */
-/*   Updated: 2023/08/30 12:44:36 by araqioui         ###   ########.fr       */
+/*   Updated: 2023/09/09 15:56:50 by araqioui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,13 @@ int main()
 	j->makeSound();
 	meta->makeSound();
 
-	// const WrongAnimal	*cat = new WrongAnimal();
-	// const WrongAnimal	*ptr = new WrongCat();
-	// cat->makeSound();
-	// ptr->makeSound();
+	const WrongAnimal	*cat = new WrongAnimal();
+	const WrongAnimal	*ptr = new WrongCat();
+	cat->makeSound();
+	ptr->makeSound();
 
-	// delete cat;
-	// delete ptr;
+	delete cat;
+	delete ptr;
 	delete meta;
 	delete j;
 	delete i;

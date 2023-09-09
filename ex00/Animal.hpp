@@ -6,12 +6,11 @@
 /*   By: araqioui <araqioui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 14:42:54 by araqioui          #+#    #+#             */
-/*   Updated: 2023/09/09 13:58:36 by araqioui         ###   ########.fr       */
+/*   Updated: 2023/09/09 15:51:36 by araqioui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef _ANIMAL_HPP_
-#define _ANIMAL_HPP_
+#pragma once
 
 #include <iostream>
 
@@ -28,5 +27,3 @@ class Animal {
 		std::string		getType(void) const;
 		virtual void	makeSound(void) const;
 };
-
-#endif /* _ANIMAL_HPP_ */

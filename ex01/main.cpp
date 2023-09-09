@@ -6,7 +6,7 @@
 /*   By: araqioui <araqioui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 14:41:41 by araqioui          #+#    #+#             */
-/*   Updated: 2023/08/29 18:24:52 by araqioui         ###   ########.fr       */
+/*   Updated: 2023/09/09 15:58:12 by araqioui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,16 +31,16 @@ int main()
 			if (i < NBANIMALS / 2)
 			{
 				dog = new Dog;
-				// dog->setIdeas("I'm a Dog, I can't think");
-				// std::cout << dog->getIdeas(0) << std::endl;
 				ptr[i] = dog;
+				dog->setIdeas("I'm a Dog, I can't think");
+				std::cout << dog->getIdeas(0) << std::endl;
 			}
 			else
 			{
 				cat = new Cat;
-				// cat->setIdeas("Stupid Cat");
-				// std::cout << cat->getIdeas(0) << std::endl;
 				ptr[i] = cat;
+				cat->setIdeas("Stupid Cat");
+				std::cout << cat->getIdeas(0) << std::endl;
 			}
 		}
 		std::cout << std::endl;

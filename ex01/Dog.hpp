@@ -6,12 +6,11 @@
 /*   By: araqioui <araqioui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 14:45:39 by araqioui          #+#    #+#             */
-/*   Updated: 2023/08/23 17:47:23 by araqioui         ###   ########.fr       */
+/*   Updated: 2023/09/09 15:52:40 by araqioui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef _DOG_HPP_
-#define _DOG_HPP_
+#pragma once
 
 #include "Animal.hpp"
 #include "Brain.hpp"
@@ -30,5 +29,3 @@ class Dog : public Animal {
 		void		setIdeas(std::string idea);
 		std::string	getIdeas(int id) const;
 };
-
-#endif /* _DOG_HPP_ */

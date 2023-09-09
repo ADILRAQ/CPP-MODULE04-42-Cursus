@@ -6,12 +6,11 @@
 /*   By: araqioui <araqioui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/23 09:47:13 by araqioui          #+#    #+#             */
-/*   Updated: 2023/08/23 17:38:32 by araqioui         ###   ########.fr       */
+/*   Updated: 2023/09/09 15:55:53 by araqioui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef _BRAIN_HPP_
-#define _BRAIN_HPP_
+#pragma once
 
 #include <iostream>
 
@@ -28,5 +27,3 @@ class Brain {
 		void		setIdeas(std::string idea);
 		std::string	getIdeas(int id) const;
 };
-
-#endif /* _BRAIN_HPP_ */

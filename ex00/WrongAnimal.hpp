@@ -6,12 +6,11 @@
 /*   By: araqioui <araqioui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 18:30:44 by araqioui          #+#    #+#             */
-/*   Updated: 2023/08/23 09:34:31 by araqioui         ###   ########.fr       */
+/*   Updated: 2023/09/09 15:51:59 by araqioui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef _WRONGANIMAL_HPP_
-#define _WRONGANIMAL_HPP_
+#pragma once
 
 #include <iostream>
 
@@ -28,5 +27,3 @@ class WrongAnimal {
 		std::string	getType(void) const;
 		void		makeSound(void) const;
 };
-
-#endif /* _WRONGANIMAL_HPP_ */
