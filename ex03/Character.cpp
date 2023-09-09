@@ -6,7 +6,7 @@
 /*   By: araqioui <araqioui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/26 16:57:19 by araqioui          #+#    #+#             */
-/*   Updated: 2023/08/29 18:07:36 by araqioui         ###   ########.fr       */
+/*   Updated: 2023/08/31 09:05:55 by araqioui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ Character::Character(void)
 {
 	int	i = -1;
 
-	// Collector = NULL;
+	Collector = NULL;
 	while (++i < 4)
 		Slot[i] = NULL;
 }
@@ -26,7 +26,7 @@ Character::Character(std::string name)
 	int	i = -1;
 
 	Name = name;
-	// Collector = NULL;
+	Collector = NULL;
 	while (++i < 4)
 		Slot[i] = NULL;
 }
@@ -38,7 +38,6 @@ Character::~Character(void)
 	while (++i < 4)
 		if (Slot[i])
 			delete Slot[i];
-	// TODO: DELETE COLLECTOR
 	i = -1;
 	while (Collector && Collector[++i])
 		delete Collector[i];
@@ -127,17 +126,3 @@ void	Character::use(int idx, ICharacter &target)
 	if (idx >= 0 && idx <= 3 && Slot[idx])
 		Slot[idx]->use(target);
 }
-
-// void	Character::print()
-// {
-// 	int	i = -1;
-
-// 	std::cout << std::endl;
-// 	while (Collector && Collector[++i])
-// 		std::cout << ">" << Collector[i] << std::endl;
-// 	std::cout << std::endl;
-// 	i = -1;
-// 	while (++i < 4)
-// 		std::cout << "-->" << Slot[i] << std::endl;
-// 	std::cout << std::endl;
-// }

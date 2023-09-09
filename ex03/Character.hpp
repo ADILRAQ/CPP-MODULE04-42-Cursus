@@ -6,7 +6,7 @@
 /*   By: araqioui <araqioui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/26 16:53:26 by araqioui          #+#    #+#             */
-/*   Updated: 2023/08/29 18:06:24 by araqioui         ###   ########.fr       */
+/*   Updated: 2023/08/31 09:06:02 by araqioui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,4 @@ class Character : public ICharacter {
 		void				use(int idx, ICharacter &target);
 		// TOOL
 		void				keepAddress(int idx);
-		// void				print();
 };

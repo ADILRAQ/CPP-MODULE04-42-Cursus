@@ -6,7 +6,7 @@
 /*   By: araqioui <araqioui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 14:41:41 by araqioui          #+#    #+#             */
-/*   Updated: 2023/08/29 18:14:26 by araqioui         ###   ########.fr       */
+/*   Updated: 2023/08/30 12:44:36 by araqioui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,11 @@ int main()
 	// const WrongAnimal	*ptr = new WrongCat();
 	// cat->makeSound();
 	// ptr->makeSound();
+
+	// delete cat;
+	// delete ptr;
+	delete meta;
+	delete j;
+	delete i;
 	return 0;
 }
