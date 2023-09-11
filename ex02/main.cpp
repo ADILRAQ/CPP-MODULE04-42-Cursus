@@ -6,7 +6,7 @@
 /*   By: araqioui <araqioui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 14:41:41 by araqioui          #+#    #+#             */
-/*   Updated: 2023/09/09 15:58:06 by araqioui         ###   ########.fr       */
+/*   Updated: 2023/09/11 12:36:34 by araqioui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int main()
 			{
 				cat = new Cat;
 				ptr[i] = cat;
-				cat->setIdeas("Fucking Stupid Cat");
+				cat->setIdeas("Stupid Cat");
 				std::cout << cat->getIdeas(0) << std::endl;
 			}
 		}

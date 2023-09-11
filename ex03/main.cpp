@@ -6,7 +6,7 @@
 /*   By: araqioui <araqioui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/27 09:37:13 by araqioui          #+#    #+#             */
-/*   Updated: 2023/08/30 08:55:01 by araqioui         ###   ########.fr       */
+/*   Updated: 2023/09/11 12:38:27 by araqioui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,8 @@ int	main()
 	AMateria* tmp;
 	tmp = src->createMateria("ice");
 	me->equip(tmp);
-	// std::cout << tmp << std::endl;
 	tmp = src->createMateria("cure");
 	me->equip(tmp);
-	// std::cout << tmp << std::endl;
 
 	ICharacter* bob = new Character("bob");
 

@@ -6,7 +6,7 @@
 /*   By: araqioui <araqioui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 14:44:33 by araqioui          #+#    #+#             */
-/*   Updated: 2023/09/09 15:56:00 by araqioui         ###   ########.fr       */
+/*   Updated: 2023/09/11 12:49:22 by araqioui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,15 @@ class Cat : public Animal {
 		Brain	*brain;
 
 	public:
+		// Orthodox Canonical Form
 		Cat(void);
 		Cat(const Cat &obj);
-		virtual ~Cat(void);
-		Cat			&operator = (const Cat &source);
-		void		makeSound(void) const;
+		~Cat(void);
+		Cat		&operator = (const Cat &source);
+
+		// Implemented Methods
+		void	makeSound(void) const;
+
 		// Getter && Setter
 		void		setIdeas(std::string idea);
 		std::string	getIdeas(int id) const;
